@@ -1,0 +1,27 @@
+.random-wheel{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    position: relative;
+    margin: auto;
+    width: 35%;
+}
+
+.stand{
+    position: absolute;
+    z-index: 1;
+    width: 103%;
+    margin-left: -1.9%;
+    margin-top: -1.3%;
+    
+}
+
+.wheel{
+    position: absolute;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    rotate: 20deg;
+    
+}
+
