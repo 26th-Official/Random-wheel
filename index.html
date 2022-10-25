@@ -9,42 +9,49 @@
     <link rel="stylesheet" href="style.css">
     <script src="Script\Bootstrap-5.2.2\js\bootstrap.min.js"></script>
 
-     <!-- --------------------------------------Font--------------------------------------------- -->
-     <link
-     href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Domine:wght@400;500;600;700&display=swap"
-     rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap" rel="stylesheet"> 
- <!-- --------------------------------------Font--------------------------------------------- -->
+    <!-- --------------------------------------Font--------------------------------------------- -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Domine:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap"
+        rel="stylesheet">
+    <!-- --------------------------------------Font--------------------------------------------- -->
     <title>Random Wheel</title>
 </head>
 
-<body onload="rotatewheel()">
-    <nav class="navbar navbar-expand-lg" style="background-color: rgb(26, 26, 26) ;">
-        <div class="container-fluid fixed">
-            <a class="navbar-brand nav-txt" href="/index.html">Random Wheel</a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#nav-item-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nav-item-collapse">
+<body>
+    <div class="start">
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(26, 26, 26) ;">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-txt" href="/index.html">Random Wheel</a>
                 <div class="item-nav">
                     <ul class="navbar nav">
                         <li class="nav-item"></li>
                     </ul>
                 </div>
-                <button class="btn btn-dark common-btn" style="font-size: 1.2rem;">More 
+                <button class="btn btn-dark common-btn" style="font-size: 1.2rem;"
+                    onclick="window.open('https://26th-official.github.io/Web-dev/')">More
                     <img class="right-arrow" src="Assets\right-arrow.png" alt="arrow-img"></button>
             </div>
-        </div>
+    </div>
     </nav>
     <div class="container-fluid">
-        <div class="random-wheel">
-            <img class="stand" src="Assets\Random-stand.svg" alt="Random-stand-img">
-            <img class="wheel" src="Assets\Random-wheel.svg" alt="Random-Wheel-img">
+        <div class="content-sm">
+            <h1>Random Number Wheel</h1>
+            <h5> Click on this button to SPIN!!!</h5>
+            <button class="btn btn-dark common-btn" style="font-size: 3rem;" onclick="rotatewheel()">Spin
+                <img class="Spin" src="Assets\Spin.png" alt="spin-img"></button>
         </div>
-        <div class="content">
-            <button class="btn btn-dark common-btn" style="font-size: 3rem;" onclick="rotatewheel()">Spin 
+        <div class="ctrl">
+            <div class="random-wheel">
+                <img class="stand" src="Assets\Random-stand.svg" alt="Random-stand-img" onclick="rotatewheel()">
+                <img class="wheel" src="Assets\Random-wheel.svg" alt="Random-Wheel-img" onclick="rotatewheel()">
+            </div>
+        </div>
+        <div class="content-lg">
+            <h1>Random Number Wheel</h1>
+            <h5> Click on this button to SPIN!!!</h5>
+            <button class="btn btn-dark common-btn" style="font-size: 3rem;" onclick="rotatewheel()">Spin
                 <img class="Spin" src="Assets\Spin.png" alt="spin-img"></button>
         </div>
         <script src="index.js"></script>
