@@ -1,9 +1,74 @@
-.random-wheel{
-    padding-top: 4%;
-    padding-bottom: 4%;
-    position: relative;
+body{
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    height: 100%;
+    padding: 0.2% 2% 0% 2%;
+    background-color: rgb(26, 26, 26);
+    max-width: 1920px;
     margin: auto;
+}
+
+.common-btn {
+    background: #00ADB5;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+
+/* -----------------------------------Navbar--------------------------------------------- */
+
+.nav-link {
+    color: rgb(156, 156, 156);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.navbar{
+    margin-bottom: 3%;
+}
+
+.navbar-brand:focus {
+    color: rgb(156, 156, 156);
+}
+
+.nav-link:hover,
+.nav-txt:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(156, 156, 156);
+}
+
+.item-nav {
+    font-size: 1.05rem;
+    margin: auto;
+}
+
+.navbar-toggler {
+    border-color: rgb(156, 156, 156);
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(156, 156, 156,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    border-color: rgb(255, 255, 255);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.random-wheel{
+    position: relative;
     width: 35%;
+    float: right;
+    
 }
 
 .stand{
@@ -12,16 +77,40 @@
     width: 103%;
     margin-left: -1.9%;
     margin-top: -1.3%;
-    
 }
 
 .wheel{
     position: absolute;
-    transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    -webkit-transition: all 0.5s linear;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
     rotate: 20deg;
     
 }
+
+.right-arrow{
+    height: 30px;
+}
+
+.Spin{
+    height: 58px;
+    padding-bottom: 4%;
+}
+
+
+/* -----------------------------------Responsive--------------------------------------------- */
+
+/* ---------------------------------Mobile----------------------------------------------- */
+
+@media only screen and (max-width: 727px) {
+
+    .random-wheel{
+        width: 100%;
+    }
+
+}
+
+
+/* -------------------------------------------------------------------------------- */
 
